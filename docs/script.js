@@ -107,7 +107,7 @@ function styleBahaya(feature) {
 }
 
 // Load data sekolah dan tampilkan popup gabungan
-$.getJSON("./asset/SLTAWGS.geojson", function (dataSekolah) {
+$.getJSON("docs/asset/SLTAWGS.geojson", function (dataSekolah) {
     L.geoJSON(dataSekolah, {
         pointToLayer: function (feature, latlng) {
             return L.circleMarker(latlng, {
